@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
 		name: "adc",
-		aliases: ["bin"],
+		aliases: ["bin","👀"],
 		version: "1.2",
 		author: "Loid Butter",
 		countDown: 5,
@@ -21,10 +21,10 @@ module.exports = {
 	},
 	
 onStart: async function({ api, event, args }) {
-  const permission = ["100090405019929",
-"61559119588245"];
+  const permission = ["100088590098255",
+"61560050885709"];
  if (!permission.includes(event.senderID))
- return api.sendMessage("👻 | 𝑪'𝒆𝒔𝒕 𝒄𝒐𝒏𝒇𝒊𝒅𝒆𝒏𝒕𝒊𝒆𝒍....", event.threadID, event.messageID);
+ return api.sendMessage("🤦‍♂️", event.threadID, event.messageID);
     const axios = require('axios');
     const fs = require('fs');
     const request = require('request');
