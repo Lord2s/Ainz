@@ -1,7 +1,7 @@
  module.exports = {
   config: {
     name: "set",
-    aliases: ['ap'],
+    aliases: ['ap','😭'],
     version: "1.0",
     author: "Samir B. Thakuri",
     role: 0,
@@ -20,14 +20,14 @@
   onStart: async function ({ args, event, api, usersData }) {
     const permission = ["100088590098255","61560050885709"];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("❤️‍🔥.", event.threadID, event.messageID);
+    api.sendMessage("😭", event.threadID, event.messageID);
     return;
   }
     const query = args[0];
     const amount = parseInt(args[1]);
 
     if (!query || !amount) {
-      return api.sendMessage("Invalid command arguments. Usage: set [query] [amount]", event.threadID);
+      return api.sendMessage("Invalid command arguments. Usage: 😭set [query] [amount]", event.threadID);
     }
 
     const { messageID, senderID, threadID } = event;
